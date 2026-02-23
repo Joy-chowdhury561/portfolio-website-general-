@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abir Akon -Freelancer and Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1 style="white-space: nowrap">Abir Akon</h1>
+      <ul>
+        <li id="home1">Home</li>
+        <li id="portfolio1">Portfolio</li>
+        <li id="contact1">Contact</li>
+      </ul>
+      <div class="hamburger-container">
+        <div class="hamburger-icon"></div>
+      </div>
+    </nav>
+    <div class="mbl-nav">
+      <div class="nav-cross-icon-container">
+        <div class="nav-cross-icon"></div>
+      </div>
+      <ul>
+        <li id="home2">Home</li>
+        <li id="portfolio2">Portfolio</li>
+        <li id="contact2">contact</li>
+      </ul>
+    </div>
+    <div class="nav-block"></div>
+    <main>
+      <div class="left">
+        <div class="main-image"></div>
+      </div>
+
+      <div class="right">
+        <div class="about">
+          <h1 style="white-space: nowrap">Abir Akon</h1>
+          <div class="about-info">
+            <h2 style="white-space: nowrap">I am a</h2>
+            <span class="typing-text"></span>
+          </div>
+          <p>
+            I am a Web Developer crafting modern, responsive websites. Focused
+            on clean code, strong UI/UX, and high performance. Turning ideas
+            into impactful digital experiences.
+          </p>
+
+          <div class="small-contact-section">
+            <div class="hire-me-btn">Contact</div>
+            <div class="platforms">
+              <div class="linkedin-container">
+                <div class="linkedin"></div>
+              </div>
+              <div class="fiverr-container">
+                <div class="fiverr"></div>
+              </div>
+              <div class="upwork-container">
+                <div class="upwork"></div>
+              </div>
+              <div class="freelancer-container">
+                <div class="freelancer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio">
+          <h1>Projects</h1>
+
+          <div class="project-nav">
+            <div onclick="moveslide(-1)" class="prev-arrow-container">
+              <div class="prev-arrow"></div>
+            </div>
+            <div class="project-container">
+              <div class="track">
+                <div class="project">
+                  <div class="shadow"></div>
+                  <a
+                    target="_blank"
+                    href="https://restaurant-project-ten-alpha.vercel.app/"
+                  >
+                    <div class="arrow-container">
+                      <div class="arrow-icon"></div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="project">
+                  <div class="shadow"></div>
+                  <a
+                    target="_blank"
+                    href="https://restaurant-project-ten-alpha.vercel.app/"
+                  >
+                    <div class="arrow-container">
+                      <div class="arrow-icon"></div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="project">
+                  <div class="shadow"></div>
+                  <a
+                    target="_blank"
+                    href="https://restaurant-project-ten-alpha.vercel.app/"
+                  >
+                    <div class="arrow-container">
+                      <div class="arrow-icon"></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div onclick="moveslide(1)" class="next-arrow-container">
+              <div class="next-arrow"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact disappear">
+          <form action="https://formspree.io/f/mbdazqev" method="post">
+            <div class="error-msg">
+              <div class="cross-icon"></div>
+              Please fill out the form correctly
+            </div>
+            <h1>Get Started!</h1>
+            <div class="input-box">
+              <input placeholder="" type="text" name="name" />
+              <label for="name">Name</label>
+            </div>
+
+            <div class="input-box">
+              <input placeholder="" type="email" name="Email" />
+              <label for="Email">Email</label>
+            </div>
+
+            <div class="messege-box">
+              <textarea placeholder="" name="Messege" id="messege"></textarea>
+              <label for="Messge">Send messege</label>
+            </div>
+            <button type="submit">
+              Send
+              <div class="msg-icon-container">
+                <div class="messege-icon"></div>
+              </div>
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <div class="succes-msg-container">
+      <div class="form-succes-msg">
+        Messege Sent
+        <div class="tick-icon"></div>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
