@@ -842,11 +842,13 @@ textarea:-webkit-autofill {
 @media (max-width:500px) {
     .small-contact-section { justify-content: center;}
     .about{
-      margin-bottom: 0;
+      margin-bottom: 5rem;
     }
+
     .main-image{
       height:24rem;
       width:15rem;
+      margin-bottom: 5rem;
     }
     .portfolio{
       width:80vw;
