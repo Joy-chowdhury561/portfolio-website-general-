@@ -38,7 +38,7 @@ nav li:hover {
   color: rgb(8, 230, 8);
 }
 .hamburger-container {
-  position: absolute;
+  position: fixed;
   right: 1rem;
   width: clamp(3rem, 5vw, 10rem);
   height: clamp(3rem, 5vw, 10rem);
