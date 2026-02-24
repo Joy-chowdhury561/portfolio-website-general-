@@ -105,28 +105,29 @@ const nameInput = document.querySelector('input[name="name"]');
 const emailInput = document.querySelector('input[type="email"]');
 const textArea = document.querySelector("form textarea");
 const form = document.querySelector("form");
+form.addEventListener("submit", async (event) => {
+  event.preventDefault();
 
-form.addEventListener("submit", (event) => {
- // ALWAYS first
+  const formData = new FormData(form);
 
-  if (
-    nameInput.value.trim() === "" ||
-    emailInput.value.trim() === "" ||
-    textArea.value.trim() === ""
-  ) {
+  const response = await fetch(form.action, {
+    method: "POST",
+    body: formData,
+    headers: {
+      Accept: "application/json",
+    },
+  });
+
+  if (response.ok) {
+    form.reset();
+    document.querySelector(".form-succes-msg").classList.add("show");
+
+    setTimeout(() => {
+      document.querySelector(".form-succes-msg").classList.remove("show");
+    }, 3000);
+  } else {
     document.querySelector(".error-msg").style.opacity = "1";
-      event.preventDefault();
-    return;
   }
-  document.querySelector(".error-msg").style.opacity = "0";
-  const successMsg = document.querySelector(".form-succes-msg");
-  successMsg.classList.add("show");
-  const msgIcon = document.querySelector(".msg-icon-container");
-  msgIcon.style.transform = "transform:translateX(0rem) translateY(0rem); ";
-
-  setTimeout(() => {
-    successMsg.classList.remove("show");
-  }, 3000);
 });
 const contactBtn = document.querySelector("#contact1");
 const contactBtn3 = document.querySelector("#contact2");
