@@ -166,3 +166,11 @@ navBlock.addEventListener("click", () => {
   mblNav.classList.remove("show");
   navBlock.style.display = "none";
 });
+const freelancerBtn = document.querySelector(".freelancer-container");
+const fiverrBtn=document.querySelector(".fiverr-container")
+freelancerBtn.addEventListener("click", () => {
+  window.open("https://www.freelancer.com.bd/u/abirakon185?sb=t", "_self");
+});
+fiverrBtn.addEventListener("click", () => {
+  window.open("https://www.fiverr.com/abir_akon", "_self");
+});
