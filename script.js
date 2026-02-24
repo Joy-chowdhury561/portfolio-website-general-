@@ -107,7 +107,7 @@ const textArea = document.querySelector("form textarea");
 const form = document.querySelector("form");
 
 form.addEventListener("submit", (event) => {
-  event.preventDefault(); // ALWAYS first
+ // ALWAYS first
 
   if (
     nameInput.value.trim() === "" ||
@@ -115,6 +115,7 @@ form.addEventListener("submit", (event) => {
     textArea.value.trim() === ""
   ) {
     document.querySelector(".error-msg").style.opacity = "1";
+      event.preventDefault();
     return;
   }
 
