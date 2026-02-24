@@ -118,8 +118,6 @@ form.addEventListener("submit", (event) => {
       event.preventDefault();
     return;
   }
-
-  form.reset();
   document.querySelector(".error-msg").style.opacity = "0";
   const successMsg = document.querySelector(".form-succes-msg");
   successMsg.classList.add("show");
